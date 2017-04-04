@@ -1,0 +1,9 @@
+version: '2'
+services:
+
+  app-node:
+    build: ./docker/app-node
+    ports:
+     - "9090:9090"
+    volumes:
+     - "../app:/home/app"
